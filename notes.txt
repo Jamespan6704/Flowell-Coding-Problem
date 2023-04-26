@@ -1,0 +1,7 @@
+Set up a new NestJS project with the required dependencies (e.g. NestJS, Passport, JWT, database driver, etc.).
+Define the database schema for the User and Post models.
+Implement the User registration endpoint (/auth/register) by creating a new User instance and storing it in the database.
+Implement the User login endpoint (/auth/login) by verifying the email and password, and returning a JWT token if successful.
+Implement the Post creation endpoint (/posts) by creating a new Post instance and associating it with the User who made the request (as determined by the JWT in the request header).
+Implement the Post deletion endpoint (/posts/:id) by verifying that the user making the request is the one who created the post, and deleting the post if authorized.
+Implement the feed retrieval endpoint (/feed) by querying the database for all posts associated with the user making the request (as determined by the JWT in the request header).
